@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.header{
+    height: 75px;
+    outline: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer{
+    width: 155px;
+
+}
+
+
+.searchInputContainer{
+    width: 320px;
+    display: flex;
+    height: 40px;
+    margin: 25px;
+    outline: 1px solid gray;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+
+    
+}
+
+.searchIcon{
+    width: 20px;
+}
+
+.inputSearch{
+    outline: none;
+    width: 250px;
+    border: none; 
+    margin: 15px; 
+    font-size: 20px;  
+}
+
+#closeSearch{
+    display: none;
+}
+
+.searchModalRecent{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: pink;
+    display: none;
+}
+
+.searchInputContainer:focus-within .searchModalRecent{
+    display: block;
+}
